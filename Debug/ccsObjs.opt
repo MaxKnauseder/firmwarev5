@@ -1,0 +1,1 @@
+"./Relay.obj" "./adt7410.obj" "./crc.obj" "./ltc2327.obj" "./stat.obj" "./usart.obj" "./v5_main.obj" "./wait.obj" "./xbee.obj" "../lnk_msp430f169.cmd" -llibc.a 
