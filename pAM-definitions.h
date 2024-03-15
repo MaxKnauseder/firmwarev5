@@ -118,15 +118,10 @@
 
 
 /******Port 3 definitions****/
-#define XBEE_SLEEP_PORT_in  port3_in
-#define XBEE_SLEEP_PORT_out port3_out
-#define XBEE_SLEEP_PORT_dir port3_dir
-
-
-
 #define XBEE_PORT_in   port3_in
-/*#define XBEE_PORT_out  port3_out
-#define XBEE_PORT_dir  port3_dir*/
+#define XBEE_PORT_out  port3_out
+#define XBEE_PORT_dir  port3_dir
+#define XBEE_PORT_SEL  port3_sel
 
 /******Port 4 definitions****/
 #define MODE_RELAY_PORT_in   port4_in

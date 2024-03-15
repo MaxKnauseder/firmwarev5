@@ -13,15 +13,15 @@ void SLEEP(int i)
 {
 /*enables/disables the xbee*/
     if (i) {
-        P2OUT set_high pin0;
+        XBEE_PORT_out set_high XBEE_SLEEP;
     } else {
-        P2OUT set_low pin0;
+        XBEE_PORT_out set_low XBEE_SLEEP;
     }
 }
 void xbee_setup()
 {
 //setup xbee port
-    XBEE_SLEEP_PORT_dir set_as_output XBEE_SLEEP;
+    XBEE_PORT_dir set_as_output XBEE_SLEEP;
 /* Start sleeping! */
     SLEEP(1);
 }
