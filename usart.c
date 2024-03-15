@@ -12,13 +12,13 @@
 void usart_setup() {
 	/* TX */
 	//port3.dir.pin4 = IO_DIRPIN_OUTPUT;
-    port3_dir set_as_output pin4;
+    XBEE_PORT_dir set_as_output XBEE_DIN;
 	//port3.sel.pin4 = IO_ALTPIN_SELECT;
-    port3_sel set_alt pin4;
+    XBEE_PORT_SEL set_alt XBEE_DIN;
 
 	/* RX */
-	port3_dir set_as_input pin5;
-	port3_sel set_alt pin5;
+	XBEE_PORT_dir set_as_input XBEE_DOUT;
+	XBEE_PORT_SEL set_alt XBEE_DOUT;
 	//UCTL0 |= SWRST;
     U0CTL set_high SWRST;            /* Block USART for programming */
 
